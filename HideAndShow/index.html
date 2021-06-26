@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p:odd").css("background-color", "yellow");
+});
+</script>
+</head>
+
+<body>
+<center>
+<h1>Show and Hide</h1>
+<p class="a">odd</p>
+<p class="myText">even</p>
+<p class="a">odd</p>
+<p class="myText">even</p>
+<p class="a">odd</p>
+<p class="myText">even</p>
+
+<button class="btn">Hide Even</button>
+
+<button class="bt">Hide Odd</button>
+
+</center>
+
+<script>
+$(".btn").click(function() {
+  
+   var lable = $(".btn").text().trim();
+
+   if(lable == "Hide Even") {
+     $(".btn").text("Show Even");
+     $(".myText").hide();
+   }
+   else {
+     $(".btn").text("Hide Even");
+     $(".myText").show();
+   }
+    
+  });
+  $(".bt").click(function() {
+  
+   var lable = $(".bt").text().trim();
+
+   if(lable == "Hide Odd") {
+     $(".bt").text("Show Odd");
+     $(".a").hide();
+   }
+   else {
+     $(".bt").text("Hide Odd");
+     $(".a").show();
+   }
+    
+  });
+  
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
